@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+ }
+
+ .wrapper{
+    background-image: url(img/cc6.jpg);
+    background-size: cover;
+    height: 150vh;
+ }
+
+ .navbar{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.4);
+ }
+
+ .navbar ul{
+    float: right;
+    margin-right: 2%;
+ }
+
+ .navbar ul li{
+    list-style: none;
+    margin: 0 12px;
+    display: inline-block;
+    line-height: 70px;
+ }
+
+ .navbar ul li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 20px;
+   font-family: 'Roboto', 'sans-serif';
+ }
+
+ .logo_header{
+   width: 90px;
+   height: auto;
+   padding: 0px 50px;
+ }
+
+ .container{
+   align-items: center;
+   height: 530px;
+   width: 400px;
+   position: absolute;
+   top: 30%;
+   left: 35%;
+   background: rgba(0, 0, 0, 0.527);
+   box-shadow: 1px 2px 10px #000, 3px 6px 20px #000;
+ }
+
+ .logo_card img{
+   width: 300px;
+   height: 250px;
+   position: relative;
+   left: 15%;
+   top: -20%;
+}
+
+h6{
+   margin: 3%;
+   padding: 1.7%;
+   margin: 0%;
+   font-size: 1.5rem;
+   color: orange;
+}
+
+input{
+   text-transform: capitalize;
+    top: -20%;
+    width: 98%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #FF7A01;
+    color: white;
+    transition: 25s ease-in-out;
+}
+
+.input-field{
+    position: relative;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: #d9d9d9;  
+}
+
+button{
+   height: 50px;
+    width: 150px;
+    background-color: #FF7A01;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    font-size: 25px;
+    margin-top: 6%;
+}
+
+.center{
+    text-align: center;
+}
+
+.print{
+   margin: 10px;
+   padding: 20px;
+   display: none;
+   border: 1px solid #000;
+   border-radius: 30px;
+   width: 600px;
+   background-color: #FF7A01;
+   color: #fff;
+}
+
+.print h1{
+   border-bottom: 1px solid #000;
+}
+
+.aviso{
+   border-top: 1px solid #000;
+   text-align: center;
+}
+
+/* PDF DO CONVITE */
+@media print{
+    .print{
+      display: block;
+    }
+
+    .dados, .wrapper, .footer{
+      display: none;
+    }
+}
+
+
+footer {
+   display: flex;
+   height: auto;
+   width: 100%;
+   background-color: #7800D1;
+   border-bottom: 0px;
+}
+
+footer ul {
+   position: relative;
+   left: 25%;
+   margin: 2.5%;
+   font-size: 20px;
+}
+
+footer ul {
+   list-style: none;
+   top: -15%;
+}
+
+footer ul li {
+   padding: 3%;
+}
+
+footer a {
+   text-decoration: none;
+   color: #fff;
+}
+
+footer .titulo {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 25px;   
+}
+
+.logo1 {
+   position: relative;
+   margin-left: -6%;
+   left: 15%;
+   top: 5%;
+   width: 200px; height: 200px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px){
+   .container{
+      height: 500px;
+   }
+
+   button{
+      height: auto;
+      margin-top: 4%;
+   }
+}
+
+ @media screen and (max-width: 768px) {   
+   .center h2{
+      font-size: 1.4rem;
+   }
+
+   .container{
+      left: 10%;
+      width: 300px;
+   }
+
+   .logo1{
+      height: 90px;
+      width: 90px;
+      margin-left: -10%;
+   }
+
+   .logo_card{
+      margin-left: -20%;
+   }
+
+   footer ul {
+      position: relative;
+      left: 5%;
+      margin: 0.5%;
+      font-size: 10px;
+   }
+ }
+
+ @media screen and (min-width: 360px) and (max-width: 420px){
+   .navbar ul li{
+      line-height: -20px;
+   }
+
+   .logo_header{
+      padding-top: -30px;
+      padding: 20px;
+      height: 70px;
+   }
+
+   body{
+      width: 102vw;
+   }
+ }
+
+ @media screen and (min-width: 200px) and (max-width: 450px){
+   .logo_header{
+      padding-top: -30px;
+      padding: 10px;
+      height: 70px;
+   }
+ }

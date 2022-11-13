@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="convite.css">
+    <link rel="icon" href="logo/igreja.png">
+    <title>Church</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo_header" src="logo/igreja.png" alt="">
+            <ul>
+                <li><a href="https://wa.me/5513997896922">Contato</a></li>
+                <li><a class="active" href="index.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="dados">
+        <div class="container">
+            <div class="logo_card">
+                <img src="logo/dança.png" alt="">
+            </div>
+    
+    
+               <div class="input-field">
+                    <h6>Nome:</h6>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+                    <label for="nome"> </label>
+                </div>
+            
+                <div class="input-field">
+                    <h6>Data de nascimento</h6>
+                    <input class="data" type="date" name="data" id="data" placeholder="Digite sua data...">
+                    <label for="data"> </label>
+                </div>
+    
+                <div class="input-field">
+                    <h6>Quem lhe convidou:</h6>
+                    <input class="convite" type="text" name="convite" id="convite" placeholder="Digite o nome...">
+                       <label for="convite"></label>
+                </div>
+    
+                <div class="center">
+                    <button onclick="gerarRecibo()">Enviar</button>
+                </div>
+           
+        </div>
+    </div>
+
+    <div class="print">
+        <h1>CONVIDADO</h1>
+        <p>Nome: <span id="recibo_nome"></span></p>
+        <p>Data de nascimento: <span id="recibo_data"></span></p>
+        <p>Convidado por: <span id="recibo_convite"></span></p>
+        <br /><br />
+        <div class="aviso"><h4>APRESENTE ESTE CONVITE AO ENTRAR</h4></div>
+    </div>
+
+    <script>
+        function gerarRecibo(){
+            
+            document.getElementById('recibo_nome').innerHTML = document.getElementById('nome').value;
+            document.getElementById('recibo_data').innerHTML = document.getElementById('data').value;
+            document.getElementById('recibo_convite').innerHTML = document.getElementById('convite').value;
+            window.print();
+        }
+    </script>
+
+<footer class="footer">
+    <img class="logo1" src="logo/igreja.png" alt="">
+
+    <ul>
+        <li class="titulo"><a href="#">Empresa</a></li>
+        <li><a href="#">Informações da empresa</a></li>
+        <li><a href="https://wa.me/5513988373455">Contato</a></li>
+        <li><a href="https://www.instagram.com/ccitanhaem/">Instagram</a></li>
+    </ul>
+
+    <ul>
+        <li class="titulo"><a href="#">Suporte</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Telefones</a></li>
+        <li><a href="">Chat</a></li>
+    </ul>
+
+    
+</footer>
+</body>
+</html>
