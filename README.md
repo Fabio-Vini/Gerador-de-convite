@@ -1,3 +1,2 @@
 # Gerador-de-convite
-
-link do site: https://evento-ccitanhaem.netlify.app/
+A simple website to identify guests
